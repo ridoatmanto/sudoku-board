@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { useCookies } from "react-cookie";
 
 export function NumberInput({ indexInput }: { indexInput: string }) {
@@ -43,14 +43,12 @@ export function NumberInput({ indexInput }: { indexInput: string }) {
     setCurrentLabel(label);
     return true;
   };
-  const inputRef = useRef();
 
   return (
     <div className="max-w-[40px] flex flex-col items-center justify-center">
       {!locked && (
         <input
           type="text"
-          ref={inputRef}
           key={"input-" + indexInput}
           value={currentValue}
           onChange={(e) => setCurrentValue(e.target.value)}
