@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export function Header() {
   return (
     <nav>
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-4">
         <div className="flex items-center">
           <div className="grid grid-rows-2">
             <div className="text-black">
